@@ -3,12 +3,13 @@ package com.ahasanidea.kotlin.creational.singleton
 import org.junit.Assert
 import org.junit.Test
 
-class AppKtTest {
+import org.junit.Assert.*
+
+class SingletonTest {
 
     @Test
-    fun getGreeting() {
-        val message=Greeting().greet()
+    fun getMessage() {
+        val message=Singleton.getMessage()
         Assert.assertEquals("Ahasan",message)
-        Assert.assertTrue("Ahasan",true)
     }
 }
